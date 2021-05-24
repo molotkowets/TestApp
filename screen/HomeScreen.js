@@ -6,7 +6,6 @@ function HomeScreen({navigation, test}) {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
-  console.log(test);
   useEffect(() => {
     fetch(
       'https://api.unsplash.com/photos/?client_id=GJTXMTCy4xxuGcU-LqTj-C-AKxRb04aXknVwFqgPbpw',

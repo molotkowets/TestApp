@@ -4,7 +4,7 @@ import {View, Image, StyleSheet} from 'react-native';
 function ProfileScreen({navigation, route}) {
   const {pictureUrl} = route.params;
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View style={styles.contPicture}}>
       <Image
         style={styles.picture}
         source={{
@@ -23,4 +23,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     aspectRatio: 1,
   },
+  contPicture: {
+    flex: 1, alignItems: 'center', justifyContent: 'center'
+  }
 });
