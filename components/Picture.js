@@ -8,7 +8,8 @@ import {
 } from 'react-native';
 function Picture({navigation, getPicture}) {
   const onPress = value => {
-    navigation.navigate('Profile', {
+    console.log('test');
+    navigation.navigate('Picture', {
       pictureUrl: value.urls.full,
     });
   };

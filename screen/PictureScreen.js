@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {View, Image, StyleSheet} from 'react-native';
 
-function ProfileScreen({navigation, route}) {
+function PictureScreen({navigation, route}) {
   const {pictureUrl} = route.params;
   return (
-    <View style={styles.contPicture}}>
+    <View style={styles.contPicture}>
       <Image
         style={styles.picture}
         source={{
@@ -14,7 +14,7 @@ function ProfileScreen({navigation, route}) {
     </View>
   );
 }
-export default ProfileScreen;
+export default PictureScreen;
 
 const styles = StyleSheet.create({
   picture: {
@@ -24,6 +24,8 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
   },
   contPicture: {
-    flex: 1, alignItems: 'center', justifyContent: 'center'
-  }
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Picture from '../Picture';
+import Picture from '../components/Picture';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
 
 function HomeScreen({navigation, test}) {
